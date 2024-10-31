@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ابحث عن عقارك</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <!-- start header -->
+<header>
+   
+  <div class="container">
+      <div class="nav-1">
+       <a href="home.html" class="logo"><img  src="imgs/logo.PNG" alt=""></a>   
+          <a href="post.html"> اعلن معنا<i class="fas fa-paper-plane"></i></a>
+  
+         </div>
+      </div>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+      <div class="d-flex">
+         <!-- 1 -->
+          <div class="nav-item dropdown" id="first-drop">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                حسابي
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="login.html">تسجيل الدخول</a></li>
+                <li><a class="dropdown-item" href="register.html">انشاء حساب جديد</a></li>
+              </ul>
+          </div>
+          <!-- 2 -->
+          <div class="nav-item dropdown nav-item-2" id="second-drop">
+            <a class="nav-link dropdown-toggle" href="#" id="a-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+            <div id="user-acount"></div>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#" id="logout">تسجيل الخروج</a></li>
+            </ul>
+        </div>
+            <div class="nav-item">
+              <a class="nav-link" href="heart.html" style="position: relative;">
+                <i class="far fa-heart " id="heart"></i>
+                <div class="contact-name">
+                  <div></div>
+                </div>
+                <span class="badge"></span>
+              </a>
+              
+            </div>
+       
+      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll" style="direction: rtl;">
+      
+      
+      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">اتصل بنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">ابحث</a>
+          </li>
+         
+          
+        </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
+<!-- End header -->
+
+    <!-- start search -->
+   <div class="search-page">
+    <div class="container">
+        <div class="title mt-4">
+            <h1>ابحث عن عقارات للبيع وللإيجار</h1>
+          </div>
+
+          <form action="">
+            <div class="col  ">
+                <div class="form-group mb-2">
+                    <input type="text" id="name" class="form-control" placeholder="اسم العقار (مثل شقة للايجار)  " required>
+                 </div>
+             </div>
+             <div class="row mb-2">
+                <div class="col-lg-6 col-12 ">
+                   <div class="form-group">
+                       <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                         <option>نوع العقار</option>
+                         <option>شقة</option>
+                         <option>محل</option>
+                         <option>منزل</option>
+                         <option>أرض</option>
+                         <option>فلل</option>
+                         <option>اخري</option>
+                       </select>          
+                     </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="form-group">
+                        <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option> القسم</option>
+                          <option>ايجار</option>
+                          <option>للبيع</option>
+                        </select>          
+                      </div>
+                 </div>
+                </div>
+                <input type="submit" value="بحث" class="btn btn-danger mt-3 mb-2 w-100" onclick="enddedpost()">
+
+          </form>
+
+          <div class="content">
+              <div class="title mt-4">
+                <h1>عرض النتائج</h1>
+              </div>
+
+              <div class="row ">
+                 <!-- first card -->
+    <div class="col-lg-4 col-md-6 col-12 mb-3 " >
+      <div class="card pb-1">
+        <div class="card-img">
+          <img src="imgs/home-4.jpeg" alt="">
+        </div>
+        <div class="card-body text-end">
+          <div class="price">
+            <span>جنيه</span>
+            <h2> 1000 </h2>
+          </div>
+          
+          <div class="text mb-3" id="title">منزل للايجار</div>
+          <p class="address"> <i class="fa-solid fa-location-dot"></i>
+         <a href="#">المنيل</a>
+          </p>
+          
+          <div class="flex-icon">
+           <div class="flex-1">
+             <!-- 1 -->
+             <div class="flex">
+              <span>2</span>
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            <!-- 2 -->
+            <div class="flex">
+              <span>1</span>
+              <i class="fa-solid fa-shower"></i>
+            </div>
+           </div>
+              <!-- 3 -->
+              <div class="flex">
+                <span>متر</span>
+                <h5> 100</h5> 
+                <i class="fa-solid fa-arrows-to-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="cont-btn text-center">
+          <a href="viewproperty.html" class="btn btn-danger">عرض المزيد</a>
+        </div>
+      </div>
+    </div>
+     <!-- first card -->
+     <div class="col-lg-4 col-md-6 col-12 mb-3 " >
+      <div class="card pb-1">
+        <div class="card-img">
+          <img src="imgs/chalet-1.jpeg" alt="">
+        </div>
+        <div class="card-body text-end">
+          <div class="price">
+            <span>جنيه</span>
+            <h2> 1200 </h2>
+          </div>
+          
+          <div class="text mb-3" id="title">شاليه للبيع استلام فوري بقريه بالساحل الشمالي</div>
+          <p class="address"> <i class="fa-solid fa-location-dot"></i>
+          <span> منتجع تاهيتي، منتجعات الساحل الشمالى </span>
+          </p>
+          
+          <div class="flex-icon">
+           <div class="flex-1">
+             <!-- 1 -->
+             <div class="flex">
+              <span>2</span>
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            <!-- 2 -->
+            <div class="flex">
+              <span>1</span>
+              <i class="fa-solid fa-shower"></i>
+            </div>
+           </div>
+              <!-- 3 -->
+              <div class="flex">
+                <span>متر</span>
+                <h5> 80</h5> 
+                <i class="fa-solid fa-arrows-to-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="cont-btn text-center">
+          <a href="viewproperty.html" class="btn btn-danger">عرض المزيد</a>
+        </div>
+      </div>
+    </div>
+              </div>
+
+          </div>
+    </div>
+   </div>
+    <!-- End search -->
+<!-- start footer -->
+<footer>
+  <div class="container">
+    <div class="content">
+      <!-- first box -->
+      <div class="box">
+        <ul>
+          <li><a href="home.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <!-- second box -->
+      <div class="box">
+        <ul>
+          <li><a href="post.html">اعلن عقارك</a></li>
+          <li><a href="search.html">ابحث</a></li>
+          
+        </ul>
+      </div>
+      <!-- thred box -->
+      <div class="box">
+        <a href="home.html"><img src="imgs/logo.PNG" alt="logo"></a>
+        <ul class="link">
+        
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-google"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <h3>© 2020 Copyright: <span>C.R.E.C</span> Company</h3>
+  </div>
+</footer>
+<!-- End footer -->
+<div class="btn-up">
+  <i class="fa-solid fa-angle-up"></i> 
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/AddHeart.js"></script>
+</body>
+</html>

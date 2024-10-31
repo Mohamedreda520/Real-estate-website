@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>city real estate company</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- start header -->
+<header>
+   
+    <div class="container">
+        <div class="nav-1">
+         <a href="home.html" class="logo"><img  src="imgs/logo.PNG" alt=""></a>   
+            <a href="post.html"> اعلن معنا<i class="fas fa-paper-plane"></i></a>
+    
+           </div>
+        </div>
+   
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="d-flex">
+           <!-- 1 -->
+            <div class="nav-item dropdown" id="first-drop">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  حسابي
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="login.html">تسجيل الدخول</a></li>
+                  <li><a class="dropdown-item" href="register.html">انشاء حساب جديد</a></li>
+                </ul>
+            </div>
+            <!-- 2 -->
+            <div class="nav-item dropdown nav-item-2" id="second-drop">
+              <a class="nav-link dropdown-toggle" href="#" id="a-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+              <div id="user-acount"></div>
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#" id="logout">تسجيل الخروج</a></li>
+              </ul>
+          </div>
+              <div class="nav-item">
+                <a class="nav-link" href="heart.html" style="position: relative;">
+                  <i class="far fa-heart " id="heart"></i>
+                  <div class="contact-name">
+                    <div></div>
+                  </div>
+                  <span class="badge"></span>
+                </a>
+                
+              </div>
+         
+        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll" style="direction: rtl;">
+        
+        
+        <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">اتصل بنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">ابحث</a>
+            </li>
+           
+            
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+<!-- End header -->
+<!-- start landing -->
+<div class="landing ">
+    <!-- slide -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/landing-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/landing-3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/landing-4.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- form -->
+    <div class="contact search">
+      <form  action="" class="">
+        <ul>
+          <li><span class="active">للبيع</span></li>
+          <li><span>للايجار</span></li>
+        </ul>
+       
+       <div class="row mt-2">
+        <div class="col-lg-3">
+          <div class="form-group">
+            <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option>السعر</option>
+              <option>1000</option>
+              <option>2000</option>
+              <option>3000</option>
+              <option>4000</option>
+              <option>5000</option>
+              <option>6000</option>
+              <option>6000</option>
+              <option>7000</option>
+              <option>8000</option>
+              <option>9000</option>
+              <option>10000</option>
+            </select>          
+          </div>
+        </div>
+        
+        <div class="col-lg-3">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="النوع الفرعي">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" >
+              <option value="">نوع العقار</option>
+              <option value="">سكني</option>
+              <option value="">تجاري</option>
+              <option value="">اراضي</option>
+              <option value="">عماير</option>
+              <option value="">اخري</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleFormControlInput1" required placeholder="ابحث عن محافظة او المدينة">          </div>
+        </div>
+       </div>
+        
+       <div class="row mt-3 other-search"> 
+        <div class="col-lg-4">
+          <div class="form-group">
+            <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option>المساحة</option>
+              <option>50</option>
+              <option>100</option>
+              <option>130</option>
+              <option>150</option>
+              <option>200</option>
+              <option>2500</option>
+              <option>300</option>
+              <option>350</option>
+              <option>400</option>
+              <option>500</option>
+              <option>اخري</option>
+            </select>          
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option>الفرش</option>
+              <option>لوكس</option>
+              <option>نصف لوكس</option>
+              <option>سوبر لوكس</option>
+              <option>تشطيب كامل </option>
+              <option>نصف كامل</option>
+              <option>بدون تشطيب</option>
+            </select>          
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option>الاطالة</option>
+              <option>شارع رئيسي</option>
+              <option> شارع فرعي</option>
+              <option>ناصية </option>
+              <option> حديقة </option>
+              <option> البحر</option>
+              <option> اخري</option>
+            </select>          
+          </div>
+        </div>
+
+        </div>
+       
+      
+        <div class="row mt-4 bg-light wrap-reverse">
+          <div class="col  ">
+            <a href="#" class="btn col-lg-3  col-12 me-3  map">البحث بالخريطة</a>
+
+            <input class="col-lg-3 col-12 btn sub " type="submit" value="بحث">
+          </div>
+          <div class="col-lg-3  col-12 text-center mb-2">
+            <div class="btn add " onclick="cleardiv()">
+              <i class="fa-sharp fa-solid fa-caret-down "></i> خيارات بحث اضافية 
+            </div>
+          </div>
+        </div>
+
+      </form>  
+    </div> 
+    </div>
+   
+<!-- End landing -->
+<!-- strat server -->
+<div class="server">
+  <div class="title">
+    <h1>الخدمات</h1>
+  </div>
+  <div class="container">
+   <div class="row mt-4">
+
+    <div class="col-lg-4 col-md-6 col-12 mb-3">
+      <div class="card">
+       <div class="card-img text-center">
+        <img src="imgs/sale.webp" class="card-img-top" alt="...">
+       </div>
+        <div class="card-body">
+          <h2 class="card-title">بيع منزلك</h2>
+          <p class="card-text">من ضمن خدمتنا تقدر تبيع منزله وانت في مكانك و بكل سهوله</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 mb-3">
+      <div class="card">
+        <div class="card-img text-center">
+          <img src="imgs/server.jpeg" class="card-img-top" style="width: auto; padding: 5px;" alt="...">
+         </div>        
+         <div class="card-body">
+          <h2 class="card-title">خدمة 24 ساعة</h2>
+          <p class="card-text">لدينا خدمه 24 ساعه ولدينا فريق يرد على جميع اسئلتكم واستفساراتكم</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 mb-3">
+      <div class="card">
+        <div class="card-img text-center">
+          <img src="imgs/rant.jpeg" class="card-img-top" alt="...">
+         </div>
+        <div class="card-body">
+          <h2 class="card-title">ايجار منزلك</h2>
+          <p class="card-text">تقدر من خلال موقعنا تاجر بيتك وانت في مكانك وبكل سهولة ومن غير تعب </p>
+        </div>
+      </div>
+    </div>
+
+
+   </div>
+  </div>
+</div>
+<!-- End server -->
+
+<!-- start filter -->
+<div class="filter">
+<div class="container">
+  <div class="title  pt-2">
+    <h1>اختر عقارك المفضل</h1>
+  </div>
+
+  <ul class="filterlink">
+    <li class="active">الكل</li>
+    <li id="land">اراضي</li>
+    <li id="shope">محل</li>
+    <li>منزل</li>
+    <li>شقة</li>
+    <li>فلل</li>
+    <li>اخري</li>
+
+  </ul>
+  <div class="row contain-imgs ">
+    <!-- first card -->
+    <!-- <div class="col-lg-4 col-md-6 col-12 mb-3 filt" data-filter="اراضي">
+      <div class="card pb-1">
+        <div class="card-img">
+          <img src="imgs/land-3.jpeg" alt="">
+        </div>
+        <div class="card-body text-end">
+          <div class="price">
+            <span>جنيه</span>
+            <h2> 2050000 </h2>
+          </div>
+          
+          <div class="text mb-3" id="title">ارض للبيع</div>
+          <p class="address"> <i class="fa-solid fa-location-dot"></i>
+          <span>القاهرة </span>
+          </p>
+          
+          <div class="flex-icon">
+           <div class="flex-1">
+           
+             <div class="flex">
+              <span>3</span>
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            
+            <div class="flex">
+              <span>2</span>
+              <i class="fa-solid fa-shower"></i>
+            </div>
+           </div>
+             
+              <div class="flex">
+                <span>متر</span>
+                <h5> 2000</h5> 
+                <i class="fa-solid fa-arrows-to-circle"></i>
+              </div>
+          </div>
+        </div>
+        <div class="cont-btn text-center">
+          <a href="viewproperty.html" class="btn btn-danger">عرض المزيد</a>
+          <i class="far fa-heart btn btn-danger"></i>
+        </div>
+      </div>
+    </div> -->
+   
+  
+  </div>
+</div>
+</div>
+<!-- End filter -->
+<!-- start footer -->
+<footer>
+  <div class="container">
+    <div class="content">
+      <!-- first box -->
+      <div class="box">
+        <ul>
+          <li><a href="home.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <!-- second box -->
+      <div class="box">
+        <ul>
+          <li><a href="post.html">اعلن عقارك</a></li>
+          <li><a href="search.html">ابحث</a></li>
+          
+        </ul>
+      </div>
+      <!-- thred box -->
+      <div class="box">
+        <a href="home.html"><img src="imgs/logo.PNG" alt="logo"></a>
+        <ul class="link">
+        
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-google"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <h3>© 2020 Copyright: <span>C.R.E.C</span> Company  </h3>
+  </div>
+</footer>
+<!-- End footer -->
+  <div class="btn-up">
+    <i class="fa-solid fa-angle-up"></i> 
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/AddHeart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اعلن عقارك معنا</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- start header -->
+<header>
+   
+  <div class="container">
+      <div class="nav-1">
+       <a href="home.html" class="logo"><img  src="imgs/logo.PNG" alt=""></a>   
+          <a href="post.html"> اعلن معنا<i class="fas fa-paper-plane"></i></a>
+  
+         </div>
+      </div>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+      <div class="d-flex">
+         <!-- 1 -->
+          <div class="nav-item dropdown" id="first-drop">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                حسابي
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="login.html">تسجيل الدخول</a></li>
+                <li><a class="dropdown-item" href="register.html">انشاء حساب جديد</a></li>
+              </ul>
+          </div>
+          <!-- 2 -->
+          <div class="nav-item dropdown nav-item-2" id="second-drop">
+            <a class="nav-link dropdown-toggle" href="#" id="a-link" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+            <div id="user-acount"></div>
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#" id="logout">تسجيل الخروج</a></li>
+            </ul>
+        </div>
+            <div class="nav-item">
+              <a class="nav-link" href="heart.html" style="position: relative;">
+                <i class="far fa-heart " id="heart"></i>
+                <div class="contact-name">
+                  <div></div>
+                </div>
+                <span class="badge"></span>
+              </a>
+              
+            </div>
+       
+      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll" style="direction: rtl;">
+      
+      
+      <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">الرئيسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">من نحن</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">اتصل بنا</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">ابحث</a>
+          </li>
+         
+          
+        </ul>
+    </div>
+  </div>
+</nav>
+
+</header>
+<!-- End header -->
+
+    <!-- start post property -->
+    <div class="post-property mt-3  ">
+        <div class="container ">
+            <div class="title mt-4 pt-2">
+                <h1>اعلن عقارك </h1>
+              </div>
+            <form action="" id="formpost" >
+               
+                 <!-- ---- 1 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group mb-2">
+                        <input type="number" id="area" class="form-control " placeholder=" مساحة العقار" required>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group mb-2">
+                        <input type="text" id="name" class="form-control" placeholder="اسم العقار (مثل شقة للايجار)  " required>
+                     </div>
+                 </div>
+                 </div>
+                 <!-- ---- 1 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group mb-2">
+                        <input type="number" id="price" class="form-control" placeholder="سعر العقار" >
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group mb-2">
+                        <input type="number" id="pricerant" class="form-control" placeholder="مبلغ الايداع عند الرغبة (الايجار)" >
+                     </div>
+                 </div>
+                 </div>
+                 <!-- ---- 2 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group mb-2">
+                        <input type="text" id="address" class="form-control" placeholder=" عنوان العقار" required>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group">
+                        <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option> القسم</option>
+                          <option>ايجار</option>
+                          <option>للبيع</option>
+                        </select>          
+                      </div>
+                 </div>
+                 </div>
+                 <!-- ---- 3 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group">
+                        <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option>نوع العقار</option>
+                          <option>شقة</option>
+                          <option>محل</option>
+                          <option>منزل</option>
+                          <option>أرض</option>
+                          <option>فلل</option>
+                          <option>اخري</option>
+                        </select>          
+                      </div>
+                 </div>
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group">
+                        <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option>حالة الملكية</option>
+                          <option>جاهز</option>
+                          <option>تحت التشيد</option>
+                        </select>          
+                      </div>
+                 </div>
+                 </div>
+                 <!-- ---- 4 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group">
+                        <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option>التشطيب</option>
+                          <option>لوكس</option>
+                          <option>نصف لوكس</option>
+                          <option>سوبر لوكس</option>
+                          <option>تشطيب كامل </option>
+                          <option>نصف كامل</option>
+                          <option>بدون تشطيب</option>
+                        </select>          
+                      </div>
+                 </div>
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group">
+                        <select  class="form-select form-select-sm" aria-label=".form-select-sm example">
+                          <option>الاطالة</option>
+                          <option>شارع رئيسي</option>
+                          <option> شارع فرعي</option>
+                          <option>ناصية </option>
+                          <option> حديقة </option>
+                          <option> البحر</option>
+                          <option> اخري</option>
+                        </select>          
+                      </div>
+                 </div>
+                 </div>
+                 <!-- ---- 5 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group">
+                        <input type="number" id="bedroom" class="form-control" placeholder="عدد الغرف" >         
+                      </div>
+                 </div>
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group">
+                        <input type="number" id="bathrooms" class="form-control" placeholder="عدد الحمامات" >         
+                      </div>
+                 </div>
+                 </div>
+                 <!-- ---- 6 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group">
+                        <input type="date" class="form-control" placeholder=" تاريخ الانشاء" >         
+                      </div>
+                 </div>
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder=" رقم الدور " >         
+                      </div>
+                 </div>
+                 </div>
+                 <!-- ---- 7 --- -->
+                 <div class="row mb-2">
+                 <div class="col-lg-6 col-12 ">
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="عدد الطوابق" >         
+                      </div>
+                 </div>
+                 <div class="col-lg-6 col-12">
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder=" رقم الشقة " >         
+                      </div>
+                 </div>
+                 </div>
+                 <!-- ---- 8 --- -->
+                 <div class="row mb-2">
+                 <div class=" col-12 ">
+                    <div class="form-group">
+                        <textarea name="" id=""  class="form-control  direction-post" placeholder="اترك رسالتك"></textarea>
+                    </div>
+                 </div>
+                 
+                 </div>
+                   <hr>
+                   <!-- select imgs -->
+                 <div class="row mb-2">
+                    <div class="form-group">
+                        <label class="label" for="exampleFormControlInput1"> اختر الصور </label>
+                        <input type="file" class="form-control" onchange="displayimg(event)" multiple accept="image/*" id="exampleFormControlInput1">
+                            <div class="info"></div> 
+                      </div>
+                 </div>
+                 <input type="submit" value="ارسال" class="btn btn-primary mt-3 mb-2 w-100" onclick="enddedpost()">
+            </form>
+        </div>
+    </div>
+    <!-- End post property -->
+<!-- start footer -->
+<footer>
+  <div class="container">
+    <div class="content">
+      <!-- first box -->
+      <div class="box">
+        <ul>
+          <li><a href="home.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <!-- second box -->
+      <div class="box">
+        <ul>
+          <li><a href="post.html">اعلن عقارك</a></li>
+          <li><a href="search.html">ابحث</a></li>
+          
+        </ul>
+      </div>
+      <!-- thred box -->
+      <div class="box">
+        <a href="home.html"><img src="imgs/logo.PNG" alt="logo"></a>
+        <ul class="link">
+        
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-google"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <h3>© 2020 Copyright: <span>C.R.E.C</span> Company </h3>
+  </div>
+</footer>
+<!-- End footer -->
+<div class="btn-up">
+<i class="fa-solid fa-angle-up"></i> 
+</div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/AddHeart.js"></script>
+    
+</body>
+</html>
